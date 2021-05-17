@@ -17,8 +17,8 @@ questions = re.split("~~", inputFile.read())
 inputFile.seek(0)
 
 print("Question #" + sys.argv[2])
-print(questions[int(sys.argv[2])])
-print("There are a total of " + str(len(questions) + 1) + " in this question pool.")
+print(questions[int(sys.argv[2]) - 1])
+print("There are a total of " + str(len(questions)) + " in this question pool.")
 
 # try:
 #     outputFile = open(sys.argv[2], "x")
